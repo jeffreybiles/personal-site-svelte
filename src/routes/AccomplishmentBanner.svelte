@@ -3,10 +3,12 @@
   export let description: string;
   export let foregroundImage: any;
   export let wideDescription: boolean = false;
-  export let gradient: string;
+  export let color: string;
 </script>
 
-<div class="accomplishment-banner" style="background: {gradient};">
+<div
+  class="accomplishment-banner"
+  style="background: linear-gradient(45deg, rgba(0,0,0,1) 14%, {color} 67%);">
   <img class="foreground" src={foregroundImage} />
   <div class="content">
     <div class="title"><div>{title}</div></div>
